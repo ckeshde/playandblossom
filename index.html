@@ -20,6 +20,48 @@
     /* body {
       font-family: 'Poppins', sans-serif;
     } */
+
+    .perspective {
+      perspective: 1000px;
+    }
+
+    .card {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.7s;
+      border-radius: 1.5rem;
+    }
+
+    .perspective:hover .card {
+      transform: rotateY(180deg);
+    }
+
+    .card-face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 1.5rem;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .card-front {
+      background-color: white;
+    }
+
+    .card-back {
+      background-color: #F89F66;
+      color: white;
+      transform: rotateY(180deg);
+      text-align: center;
+    }
   </style>
 </head>
 
@@ -209,18 +251,134 @@
           <img src="img/kids-play.jpg" alt="Children playing"
             class="w-full max-w-6xl h-auto rounded-3xl object-cover transition-transform duration-500 hover:scale-105" />
         </div>
+      </div>
+    </div>
+  </section>
 
 
 
+  <section id="services" class="bg-gray-50 py-24">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-12">
+        <h2 class="text-md font-bold text-[#F89F66] uppercase tracking-wide">Services</h2>
+        <p class="mt-2 text-4xl sm:text-5xl font-sifonn font-bold tracking-tight text-gray-900">Areas of Practice</p>
+      </div>
 
+      <!-- Services Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
+        <!-- Example Service Card -->
+        <div class="perspective h-96">
+          <div class="card">
+            <!-- Front -->
+            <div class="card-face card-front">
+              <img src="img/services/1.png" alt="Speech Therapy" class="w-full h-64 object-cover rounded-xl mb-2">
+              <h3 class="text-xl font-semibold text-gray-900 text-center">Speech Therapy</h3>
+            </div>
+            <!-- Back -->
+            <div class="card-face card-back">
+              <p>Helping children communicate clearly through personalized speech therapy sessions.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="perspective h-96">
+          <div class="card">
+            <!-- Front -->
+            <div class="card-face card-front">
+              <img src="img/services/2.png" alt="Speech Therapy" class="w-full h-64 object-cover rounded-xl mb-2">
+              <h3 class="text-xl font-semibold text-gray-900 text-center">Speech Therapy</h3>
+            </div>
+            <!-- Back -->
+            <div class="card-face card-back">
+              <p>Helping children communicate clearly through personalized speech therapy sessions.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="perspective h-96">
+          <div class="card">
+            <!-- Front -->
+            <div class="card-face card-front">
+              <img src="img/services/3.png" alt="Speech Therapy" class="w-full h-64 object-cover rounded-xl mb-2">
+              <h3 class="text-xl font-semibold text-gray-900 text-center">Speech Therapy</h3>
+            </div>
+            <!-- Back -->
+            <div class="card-face card-back">
+              <p>Helping children communicate clearly through personalized speech therapy sessions.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="perspective h-96">
+          <div class="card">
+            <!-- Front -->
+            <div class="card-face card-front">
+              <img src="img/services/4.png" alt="Speech Therapy" class="w-full h-64 object-cover rounded-xl mb-2">
+              <h3 class="text-xl font-semibold text-gray-900 text-center">Speech Therapy</h3>
+            </div>
+            <!-- Back -->
+            <div class="card-face card-back">
+              <p>Helping children communicate clearly through personalized speech therapy sessions.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="perspective h-96">
+          <div class="card">
+            <!-- Front -->
+            <div class="card-face card-front">
+              <img src="img/services/5.png" alt="Speech Therapy" class="w-full h-64 object-cover rounded-xl mb-2">
+              <h3 class="text-xl font-semibold text-gray-900 text-center">Speech Therapy</h3>
+            </div>
+            <!-- Back -->
+            <div class="card-face card-back">
+              <p>Helping children communicate clearly through personalized speech therapy sessions.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="perspective h-96">
+          <div class="card">
+            <!-- Front -->
+            <div class="card-face card-front">
+              <img src="img/services/6.png" alt="Speech Therapy" class="w-full h-64 object-cover rounded-xl mb-2">
+              <h3 class="text-xl font-semibold text-gray-900 text-center">Speech Therapy</h3>
+            </div>
+            <!-- Back -->
+            <div class="card-face card-back">
+              <p>Helping children communicate clearly through personalized speech therapy sessions.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="perspective h-96">
+          <div class="card">
+            <!-- Front -->
+            <div class="card-face card-front">
+              <img src="img/services/7.png" alt="Speech Therapy" class="w-full h-64 object-cover rounded-xl mb-2">
+              <h3 class="text-xl font-semibold text-gray-900 text-center">Speech Therapy</h3>
+            </div>
+            <!-- Back -->
+            <div class="card-face card-back">
+              <p>Helping children communicate clearly through personalized speech therapy sessions.</p>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
   </section>
 
 
-  <section id="services"></section>
+
+
+
+
+
+
+
   <section id="contact"></section>
 
   <footer>
