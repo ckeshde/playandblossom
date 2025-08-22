@@ -5,18 +5,33 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Play & Blossom </title>
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+  <link href="https://fonts.cdnfonts.com/css/sifonn" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <meta name="description" content="A simple starter HTML file." />
+
+  <style>
+    .font-sifonn {
+      font-family: 'Sifonn', sans-serif;
+
+    }
+      /* Common body font */
+    /* body {
+      font-family: 'Poppins', sans-serif;
+    } */
+  </style>
 </head>
 
 <body>
   <header class="absolute inset-x-0 top-0 z-50">
-    <nav aria-label="Global" class="bg-[#eff7fe] flex items-center justify-between p-6 lg:px-8">
+    <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
       <!-- Logo Left -->
       <div class="flex lg:flex-1">
         <a href="#" class="-m-1.5 p-1.5">
           <span class="sr-only">Your Company</span>
-          <img src="./img/logo.png" alt="" class="h-8 w-auto" />
+          <img src="./img/logo.png" alt="Logo" class="h-12 w-auto scale-125 object-contain" />
+
+
         </a>
       </div>
 
@@ -34,12 +49,14 @@
 
       <!-- Links + Login Button on Right -->
       <div class="hidden lg:flex items-center gap-x-12">
-        <a href="#about" class="text-base/8 font-semibold text-gray-900">About</a>
-        <a href="#services" class="text-base/8 font-semibold text-gray-900">Services</a>
-        <a href="#contact" class="text-base/8 font-semibold text-gray-900">Contact</a>
+        <a href="#about" class="text-base/8 font-semibold text-[#FFF] ">About</a>
+        <a href="#services" class="text-base/8 font-semibold text-[#FFF]">Services</a>
+        <a href="#contact" class="text-base/8 font-semibold text-[#FFF]">Contact</a>
         <a href="#"
-          class="bg-[#F89F66] hover:bg-[#FF9952] text-white font-bold py-2 px-4 border border-[#F89F66] rounded">Enquire
-          Now</a>
+          class="px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-[#F89F66] to-[#FF9952] shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
+          Enquire Now
+        </a>
+
       </div>
     </nav>
 
@@ -99,32 +116,102 @@
         </div>
       </div>
       <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-        <div class=" sm:mb-8 sm:flex sm:justify-center">
+        <!-- <div class=" sm:mb-8 sm:flex sm:justify-center">
           <img class="h-48 w-auto object-cover ..." src="/img/logo.png" />
-        </div>
+        </div> -->
         <div class="text-center">
-          <!-- <h1 class="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">Play & Blossom</h1> -->
-          <p class="mt-8 text-lg font-medium text-pretty text-[#fff] sm:text-xl/8">Helping children find their voice
-            through compassionate speech therapy</p>
+          <h1
+            class="text-5xl sm:text-6xl md:text-7xl font-bold text-[#FFD9C0] tracking-tight leading-tight font-sifonn">
+            Helping Little Voices Grow Stronger
+          </h1>
+          <p
+            class="mt-6 sm:mt-8 text-lg sm:text-xl md:text-2xl text-[#FFFFFF] font-medium max-w-xl mx-auto leading-relaxed">
+            Guiding children on their journey to confident communication with compassionate speech therapy
+          </p>
           <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="https://play-and-blossom-speech-pathology.splose.com/public-form/34837bc0-3c25-4049-80a3-544c3da1375f"
-              class="bg-[#F89F66] hover:bg-[#FF9952] text-white font-bold py-2 px-4 border border-[#F89F66] rounded">Enquire
-              Now</a>
+            <a href="#"
+              class="relative inline-flex items-center justify-center px-8 py-4 overflow-hidden font-bold text-white bg-gradient-to-r from-[#F89F66] to-[#FF9952] rounded-full shadow-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl">
+              <span class="relative z-10">Enquire Now</span>
+            </a>
+
           </div>
         </div>
       </div>
-      <div aria-hidden="true"
-        class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
-        <div
-          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
-          class="relative left-[calc(50%+3rem)] aspect-1155/678 w-144.5 -translate-x-1/2 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-288.75">
-        </div>
+       <div aria-hidden="true"
+      class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
+      <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+        class="relative left-[calc(50%+3rem)] aspect-1155/678 w-144.5 -translate-x-1/2 bg-gradient-to-tr from-[#FFB6C1] to-[#8A8DF8] opacity-30 sm:left-[calc(50%+36rem)] sm:w-288.75">
       </div>
+    </div>
     </div>
     </div>
   </section>
 
-  <section id="about"></section>
+  <section id="about">
+    <div class="overflow-hidden bg-white py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div
+          class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+          <div class="lg:pt-4 lg:pr-8">
+            <div class="lg:max-w-lg">
+              <h2 class="text-base/7 font-semibold text-indigo-600">About</h2>
+              <p class="mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl font-sifonn">A better
+                workflow</p>
+              <p class="mt-6 text-lg/8 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+                impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+
+              <dl class="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
+                <div class="relative pl-9">
+                  <dt class="inline font-semibold text-gray-900">
+                    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+                      class="absolute top-1 left-1 size-5 text-indigo-600">
+                      <path
+                        d="M5.5 17a4.5 4.5 0 0 1-1.44-8.765 4.5 4.5 0 0 1 8.302-3.046 3.5 3.5 0 0 1 4.504 4.272A4 4 0 0 1 15 17H5.5Zm3.75-2.75a.75.75 0 0 0 1.5 0V9.66l1.95 2.1a.75.75 0 1 0 1.1-1.02l-3.25-3.5a.75.75 0 0 0-1.1 0l-3.25 3.5a.75.75 0 1 0 1.1 1.02l1.95-2.1v4.59Z" />
+                    </svg>
+                    Push to deploy.
+                  </dt>
+                  <dd class="inline">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
+                    perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
+                </div>
+
+                <div class="relative pl-9">
+                  <dt class="inline font-semibold text-gray-900">
+                    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+                      class="absolute top-1 left-1 size-5 text-indigo-600">
+                      <path
+                        d="M10 1a4.5 4.5 0 0 0-4.5 4.5V9H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-.5V5.5A4.5 4.5 0 0 0 10 1Zm3 8V5.5a3 3 0 1 0-6 0V9h6Z" />
+                    </svg>
+                    SSL certificates.
+                  </dt>
+                  <dd class="inline">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat
+                    commodo.</dd>
+                </div>
+
+                <div class="relative pl-9">
+                  <dt class="inline font-semibold text-gray-900">
+                    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+                      class="absolute top-1 left-1 size-5 text-indigo-600">
+                      <path
+                        d="M4.632 3.533A2 2 0 0 1 6.577 2h6.846a2 2 0 0 1 1.945 1.533l1.976 8.234A3.489 3.489 0 0 0 16 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234Z" />
+                      <path
+                        d="M4 13a2 2 0 1 0 0 4h12a2 2 0 1 0 0-4H4Zm11.24 2a.75.75 0 0 1 .75-.75H16a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75h-.01a.75.75 0 0 1-.75-.75V15Zm-2.25-.75a.75.75 0 0 0-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 0 0 .75-.75V15a.75.75 0 0 0-.75-.75h-.01Z" />
+                    </svg>
+                    Database backups.
+                  </dt>
+                  <dd class="inline">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi
+                    lobortis.</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+
+          <img src="img/background-img.jpg" alt="Product screenshot"
+            class="w-full max-w-md h-auto rounded-xl shadow-xl ring-1 ring-gray-200 sm:max-w-lg md:max-w-xl lg:max-w-2xl" />
+
+        </div>
+      </div>
+  </section>
+
   <section id="services"></section>
   <section id="contact"></section>
 
